@@ -99,9 +99,8 @@ header {
     .menu {
         display: flex;
         align-items: center;
-    }
 
-    .menu__list {
+        .menu__list {
         display: flex;
         gap: 0 40px;
         margin-left: 100px;
@@ -111,17 +110,17 @@ header {
         color: #EE5514;
         font-weight: 500;
     }
+  }  
 }
 
 .shoes {
     margin-bottom: 170px;
-    background: linear-gradient(90deg, #EE5514 1.14%, rgba(238, 85, 20, 0.1) 133.88%);
+    background: linear-gradient(90deg, rgba(238, 85, 20, 0.1) 1.14%, rgba(238, 85, 20, 0) 133.88%);
 
     .shoes__inner {
         display: flex;
         justify-content: space-between;
-    }
-
+    
     .shoes__content-title {
         font-family: 'Source Serif Pro', serif;
         font-weight: 600;
@@ -142,13 +141,7 @@ header {
     .shoes__content-img {
         position: relative;
     }
-
-    .shoes__arrow {
-        position: absolute;
-        top: 200px;
-        right: 10px;
-    }
-
+  }
     .shoes__descr-list {
         display: flex;
         align-items: center;
@@ -159,7 +152,8 @@ header {
         top: 47px;
         background-color: white;
         padding: 30px 55px;
-        z-index: 1;
+        box-shadow: 0px 1px 14px rgba(26, 10, 3, 0.05);
+        border-radius: 5px;
     }
 }
 
@@ -178,9 +172,8 @@ header {
         .video__text {
             max-width: 325px;
         }
-    }
 
-    .video__preview {
+        .video__preview {
         background-image: url(assets/video-preview.png);
         background-repeat: no-repeat;
         background-position: center;
@@ -191,6 +184,7 @@ header {
         justify-content: center;
         align-items: center;
     }
+  }  
 }
 
 .feature {
@@ -271,25 +265,25 @@ header {
     justify-content: space-between;
     margin-bottom: 140px;
 
-    .testimonoals__items{
-      margin-left: 125px;
-    }
+    .testimonoals__items {
+        margin-left: 125px;
 
-    .testimonials__item-user {
-        display: flex;
-        justify-content: space-between;
-    }
+        .testimonials__item-user {
+            display: flex;
+            justify-content: space-between;
+        }
 
-    .testimonials__item-review {
-      margin-top: 70px;
-    }
+        .testimonials__item-review {
+            margin-top: 70px;
+        }
 
-    .testimonials__item-text {
-      margin: 15px 0 25px;
-    }
+        .testimonials__item-text {
+            margin: 15px 0 25px;
+        }
 
-    .testimonials__item-sport {
-      margin-top: 10px;
+        .testimonials__item-sport {
+            margin-top: 10px;
+        }
     }
 }
 
