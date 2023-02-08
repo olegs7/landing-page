@@ -45,14 +45,25 @@ body{
   }
 
   .button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       width: 137px;
       height: 59px;
       color: #FFFFFF;
       background: #EE5514;
       border-radius: 5px;
-      padding: 15px 30px;
+      // padding: 15px 30px;
+      
+      transition: 1s;
 
+      &:hover {
+        background: #CB4207;
+        transition: 0.5s;
+      }
     }
+
+
 
   .arrow-left, .arrow-right {
       position: relative;
