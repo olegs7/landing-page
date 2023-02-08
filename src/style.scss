@@ -47,6 +47,7 @@ body{
   .button {
       width: 137px;
       height: 59px;
+      color: #FFFFFF;
       background: #EE5514;
       border-radius: 5px;
       padding: 15px 30px;
@@ -101,16 +102,18 @@ header {
         align-items: center;
 
         .menu__list {
-        display: flex;
-        gap: 0 40px;
-        margin-left: 100px;
-    }
+            display: flex;
+            gap: 0 40px;
+            margin-left: 100px;
 
-    .menu__link--active {
-        color: #EE5514;
-        font-weight: 500;
+            .menu__list-item:hover {
+                font-weight: 500;
+                color: #EE5514;
+                transition: 0.5s;
+                transform: scale(1.1);
+            }
+        }
     }
-  }  
 }
 
 .shoes {
@@ -155,6 +158,15 @@ header {
         box-shadow: 0px 1px 14px rgba(26, 10, 3, 0.05);
         border-radius: 5px;
     }
+
+    .shoes__descr-def {
+      opacity: 0.7;
+    }
+
+    .shoes__descr-term {
+        font-weight: 500;
+        font-size: 18px;
+    }
 }
 
 .video {
@@ -171,6 +183,7 @@ header {
 
         .video__text {
             max-width: 325px;
+            opacity: 0.7;
         }
 
         .video__preview {
@@ -208,18 +221,30 @@ header {
             background: #FFFFFF;
             box-shadow: 0px 1px 30px rgba(26, 10, 3, 0.05);
             border-radius: 10px;
+            transition: 1s;
+
+            &:hover {
+              background-color: rgba(238, 85, 20, 0.1);
+              transition: 0.5s;
+            }
 
             .feature__item-img {
               margin-top: 55px;
             }
 
             .feature__item-title {
+              font-family: 'Source Serif Pro';
+              font-weight: 600;
+              font-size: 22px;
+              line-height: 1.5;
               margin-top: 38px;
             }
 
             .feature__item-text {
+              font-size: 14px;
               max-width: 240px;
               margin: 10px 60px 20px;
+              opacity: 0.7;
             }
 
             .feature__item-read {
@@ -233,21 +258,53 @@ header {
 }
 
 .gallary {
-  margin-bottom: 140px;
+    margin-bottom: 140px;
 
-  .gallary__title {
-    margin: 15px 0;
-  }
+    .gallary__title {
+        margin: 15px 0;
+    }
 
     .gallary__categories {
         display: flex;
         justify-content: space-between;
         margin-bottom: 60px;
+        cursor: pointer;
+
+        .gallary__categories-title,
+        .gallary__categories-list {
+            display: flex;
+            font-size: 18px;
+            line-height: 1.4;
+            letter-spacing: 0.05em;
+            opacity: 0.7;
+            gap: 30px;
+        }
+
+        .gallary__categories-link:hover {
+            font-weight: 500;
+            color: #EE5514;
+            text-decoration: underline;
+        }
     }
 
     .gallary__shoes-list {
         display: flex;
         justify-content: space-between;
+
+        .gallary__shoes-item {
+            transition: 1s;
+
+            img {
+              border: 1px solid rgba(26, 10, 3, 0.1);
+              filter: drop-shadow(0px 1px 30px rgba(26, 10, 3, 0.05));
+              border-radius: 10px;
+            }
+
+            &:hover {
+                transition: 0.5s;
+                transform: scale(1.1);
+            }
+        }
 
         p {
             margin: 10px 0;
@@ -278,11 +335,16 @@ header {
         }
 
         .testimonials__item-text {
+            font-size: 14px;
+            font-weight: 500;
+            font-style: italic;
             margin: 15px 0 25px;
+            opacity: 0.7;
         }
 
         .testimonials__item-sport {
             margin-top: 10px;
+            opacity: 0.8;
         }
     }
 }
@@ -295,12 +357,10 @@ header {
 
     .newsletter__info {
       margin: 60px;
-    }
 
-    .newsletter__text {
+      .newsletter__text {
         max-width: 525px;
         font-size: 18px;
-        line-height: 1.6;
         margin: 20px 0 40px;
         opacity: 0.7;
     }
@@ -308,7 +368,6 @@ header {
     .newsletter__form {
         position: absolute;
         display: flex;
-    }
 
     .newsletter__form-input {
         font-family: 'Poppins';
@@ -321,20 +380,22 @@ header {
         padding: 15px 140px 15px 30px;
         border: 1px solid rgba(0, 0, 0, 0.2);
         border-radius: 5px;
+        cursor: pointer;
     }
 
-    .newsletter__form-button {
-        position: relative;
-        width: 117px;
-        height: 51px;
-        background: #EE5514;
-        color: #FFFFFF;
-        border-radius: 0 5px 5px 0;
-        border: 1px solid rgba(0, 0, 0, 0.2);
-        right: 117px;
-    }
+            .newsletter__form-button {
+              position: relative;
+              width: 117px;
+              height: 51px;
+              background: #EE5514;
+              color: #FFFFFF;
+              border-radius: 0 5px 5px 0;
+              border: 1px solid rgba(0, 0, 0, 0.2);
+              right: 117px;
+        }
+      }
+   }    
 }
-
 
 .contacts__inner {
     display: flex;
@@ -342,14 +403,14 @@ header {
     margin-bottom: 40px;
 
     address {
-      margin: 10px 0 20px 0;
-      max-width: 207px;
-      font-style: normal;
-      opacity: 0.7;
+        margin: 20px 0 20px 0;
+        max-width: 207px;
+        font-style: normal;
+        opacity: 0.7;
     }
 
     .contacts__email {
-      opacity: 0.7;
+        opacity: 0.7;
     }
 
     .contacts__social-list {
@@ -362,24 +423,26 @@ header {
         display: flex;
         justify-content: space-between;
         margin-right: 30px;
-    }
 
-    .contacts__item {
-      margin: 10px 0;
-      font-size: 18px;
-      opacity: 0.7;    
-    }
+        .contacts__item {
+            margin: 10px 0;
+            font-size: 18px;
+            opacity: 0.7;
+        }
 
-    .contacts__title {
-      margin: 10px 0 30px;
-    }
+        .contacts__title {
+            margin: 10px 0 30px;
+        }
 
-    .contacts__list-support {
-      margin: 0 120px 0 75px;
-    }
+        .contacts__list-support {
+            margin: 0 120px 0 75px;
+        }
 
-    .contacts__text {
-      max-width: 247px;
+        .contacts__text {
+            max-width: 247px;
+            font-size: 18px;
+            opacity: 0.7;
+        }
     }
 }
 
@@ -387,6 +450,8 @@ header {
   display: flex;
   justify-content: center;
   align-items: flex-end;
+  font-weight: 500;
   height: 55px;
   border-top: 1px solid rgba(166,164,165,0.2);
+  opacity: 0.7;
 }
