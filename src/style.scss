@@ -1,4 +1,6 @@
-html{
+@import "./sass/main.scss";
+
+html {
   box-sizing: border-box;
 }
 
@@ -10,19 +12,19 @@ html{
   padding: 0;
 }
 
-a,ul{
+a,ul {
   color: inherit;
   text-decoration: none;
   list-style-type: none;
 }
 
-.container{
+.container {
   max-width: 1210px;
   margin: 0 auto;
   padding: 0 10px;
 }
 
-body{
+body {
   color: #1A0A03;
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
@@ -34,10 +36,10 @@ body{
     font-weight: 600;
     font-size: 20px;
     line-height: 1.5;
-    color: #EE5514;
+    color: $orange;
   } 
 
-  .title{
+  .title {
     font-family: 'Source Serif Pro', serif;
     font-weight: 600;
     font-size: 44px;
@@ -51,10 +53,8 @@ body{
       width: 137px;
       height: 59px;
       color: #FFFFFF;
-      background: #EE5514;
-      border-radius: 5px;
-      // padding: 15px 30px;
-      
+      background: $orange;
+      border-radius: 5px;  
       transition: 1s;
 
       &:hover {
@@ -101,7 +101,7 @@ header {
         display: flex;
     }
 
-    .header__inner {
+    .header-inner {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -112,14 +112,14 @@ header {
         display: flex;
         align-items: center;
 
-        .menu__list {
+        .menu-list {
             display: flex;
             gap: 0 40px;
             margin-left: 100px;
 
-            .menu__list-item:hover {
+            .menu-item:hover {
                 font-weight: 500;
-                color: #EE5514;
+                color: $orange;
                 transition: 0.5s;
                 transform: scale(1.1);
             }
@@ -135,7 +135,7 @@ header {
         display: flex;
         justify-content: space-between;
     
-    .shoes__content-title {
+    .shoes__title {
         font-family: 'Source Serif Pro', serif;
         font-weight: 600;
         font-size: 61px;
@@ -145,18 +145,18 @@ header {
     }
 
     h1 span{
-      color: #EE5514;
+      color: $orange;
     }
 
-    .shoes__content-text {
+    .shoes__text {
         max-width: 325px;
     }
 
-    .shoes__content-img {
+    .shoes__img {
         position: relative;
     }
   }
-    .shoes__descr-list {
+    .shoes__list {
         display: flex;
         align-items: center;
         gap: 0 80px;
@@ -170,11 +170,11 @@ header {
         border-radius: 5px;
     }
 
-    .shoes__descr-def {
+    .shoes__term {
       opacity: 0.7;
     }
 
-    .shoes__descr-term {
+    .shoes__def {
         font-weight: 500;
         font-size: 18px;
     }
@@ -198,7 +198,7 @@ header {
         }
 
         .video__preview {
-        background-image: url(assets/video-preview.png);
+        background-image: url(./assets/video-preview.png);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -223,7 +223,7 @@ header {
         }
     }
 
-    .feature__items {
+    .feature__list {
         display: flex;
         justify-content: space-between;
 
@@ -261,7 +261,7 @@ header {
             .feature__item-read {
               display: block;
               font-weight: 500;
-              color: #EE5514;
+              color: $orange;
               margin-bottom: 55px;
             }
         }
@@ -293,7 +293,7 @@ header {
 
         .gallary__categories-link:hover {
             font-weight: 500;
-            color: #EE5514;
+            color: $orange;
             text-decoration: underline;
         }
     }
@@ -301,8 +301,12 @@ header {
     .gallary__shoes-list {
         display: flex;
         justify-content: space-between;
+        position: relative;
 
         .gallary__shoes-item {
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0px 1px 30px rgba(26, 10, 3, 0.05);
             transition: 1s;
 
             img {
@@ -333,19 +337,22 @@ header {
     justify-content: space-between;
     margin-bottom: 140px;
 
-    .testimonoals__items {
+    .testimonoals__list {
+        box-shadow: 0px 1px 30px rgba(26, 10, 3, 0.05);
+        border-radius: 10px;
+        padding: 30px;
         margin-left: 125px;
 
-        .testimonials__item-user {
+        .testimonials__user {
             display: flex;
             justify-content: space-between;
         }
 
-        .testimonials__item-review {
+        .testimonials__review {
             margin-top: 70px;
         }
 
-        .testimonials__item-text {
+        .testimonials__text {
             font-size: 14px;
             font-weight: 500;
             font-style: italic;
@@ -398,7 +405,7 @@ header {
               position: relative;
               width: 117px;
               height: 51px;
-              background: #EE5514;
+              background: $orange;
               color: #FFFFFF;
               border-radius: 0 5px 5px 0;
               border: 1px solid rgba(0, 0, 0, 0.2);
