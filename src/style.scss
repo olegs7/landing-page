@@ -303,18 +303,10 @@ header {
         }
     }
 
-        .slider {
-            overflow: hidden;
-        }
-
     .gallary__shoes-list {
         display: flex;
         justify-content: space-between;
         position: relative;
-
-         .gallary__shoes-item:last-child{
-                display: none;
-            }
 
         .gallary__shoes-item {
             padding: 10px;
