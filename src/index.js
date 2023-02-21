@@ -28,14 +28,14 @@ arrowLeft.click(() => {
 // });
 
 
-const categoriesItem = $('.gallary__categories-item');
+const categoriesItem = document.querySelectorAll('.gallary__categories-item');
 const gallaryList = $('.gallary__shoes-list');
 
-categoriesItem.each(item => {
-	item.click(() => {
+   categoriesItem.forEach(item => {
+	item.addEventListener('click',() => {
 		let currentItem = item;
 
-		categoriesItem.each(item => {
+		categoriesItem.forEach(item => {
 			item.classList.remove('active');
 		})
 
@@ -44,7 +44,7 @@ categoriesItem.each(item => {
 		}
 
 		currentItem.classList.add('active');
-		const content = $('#' + item.dataset.tab);
+		const content = document.querySelector('#' + item.dataset.tab);
 		content.classList.remove('hidden');
 	})
 })
