@@ -52,7 +52,7 @@
                     </h1>
                     <p class="shoes__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas leo ultrices </p>
                 </div>
-                <img class="shoes-img" src="assets/shoes-title.png" alt="shoes">
+                <img class="shoes__img" src="assets/shoes-title.png" alt="shoes">
             </div>
             <dl class="shoes__list">
                 <div>
@@ -83,11 +83,9 @@
                     <h2 class="video__title title">Desire the feel of satisfaction.</h2>
                     <p class="video__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas leo ultrices commauris risus.</p>
                 </div>
-                <div class="video__preview">
-                    <a class="video__video-link" href="#">
-                        <img src="assets/video-play.svg" alt="play">
-                    </a>
-                </div>
+                <a class="video__preview" href="#">
+                    <img src="assets/video-play.svg" alt="play">
+                </a>
             </div>
         </div>
     </section>
@@ -132,23 +130,23 @@
                     <div class="gallary__categories-title">
                         Categories:
                         <ul class="gallary__categories-list">
-                            <li class="gallary__categories-link">All</li>
-                            <li class="gallary__categories-link">Male</li>
-                            <li class="gallary__categories-link">Female</li>
-                            <li class="gallary__categories-link">Kids</li>
+                            <li class="gallary__categories-item" data-tab="tab-all">All</li>
+                            <li class="gallary__categories-item active" data-tab="tab-male">Male</li>
+                            <li class="gallary__categories-item" data-tab="tab-female">Female</li>
+                            <li class="gallary__categories-item" data-tab="tab-kids">Kids</li>
                         </ul>
                     </div>
                     <div class="gallary__buttons">
                         <button class="gallary__button-left arrow-left" type="button" alt="left"></button>
                         <button class="gallary__button-right arrow-right" type="button" alt="right"></button>
                     </div>
-                </div>               
-                <ul class="gallary__shoes-list">
+                </div>
+                <ul id="tab-male" class="gallary__shoes-list active">
                     <li class="gallary__shoes-item">
                         <img class="gallary__img" src="assets/puma-bold.png" alt="puma-bold">
                         <h3>Puma RS-X Bold</h3>
-                        <p>Size: Dubble-XL</p>
-                        <p>Price: 200$</p>
+                        <p><b>Size: </b>Dubble-XL</p>
+                        <p><b>Price: </b>200$</p>
                         <div class="button">
                             <a class="gallary__shoes-button" href="#">Buy now</a>
                         </div>
@@ -156,8 +154,8 @@
                     <li class="gallary__shoes-item">
                         <img class="gallary__img" src="assets/puma-sneakers.png" alt="puma-sneakers">
                         <h3>Puma Sneakers</h3>
-                        <p>Size: Dubble-XL</p>
-                        <p>Price: 180$</p>
+                        <p><b>Size: </b>Dubble-XL</p>
+                        <p><b>Price: </b>180$</p>
                         <div class="button">
                             <a class="gallary__shoes-button" href="#">Buy now</a>
                         </div>
@@ -165,8 +163,8 @@
                     <li class="gallary__shoes-item">
                         <img class="gallary__img" src="assets/puma-ferrari.png" alt="puma-ferrari">
                         <h3>Puma Ferrari</h3>
-                        <p>Size: Dubble-XL</p>
-                        <p>Price: 190$</p>
+                        <p><b>Size: </b>Dubble-XL</p>
+                        <p><b>Price: </b>190$</p>
                         <div class="button">
                             <a class="gallary__shoes-button" href="#">Buy now</a>
                         </div>
@@ -174,8 +172,28 @@
                     <li class="gallary__shoes-item">
                         <img class="gallary__img" src="assets/puma-running.png" alt="puma-running">
                         <h3>Puma Running</h3>
-                        <p>Size: Dubble-XL</p>
-                        <p>Price: 200$</p>
+                        <p><b>Size: </b>Dubble-XL</p>
+                        <p><b>Price: </b>200$</p>
+                        <div class="button">
+                            <a class="gallary__shoes-button" href="#">Buy now</a>
+                        </div>
+                    </li>
+                </ul>
+                <ul id="tab-female" class="gallary__shoes-list hidden">
+                    <li class="gallary__shoes-item">
+                        <img class="gallary__img" src="assets/puma-bold.png" alt="puma-bold">
+                        <h3>Puma RS-X Bold</h3>
+                        <p><b>Size: </b>Dubble-XL</p>
+                        <p><b>Price: </b>200$</p>
+                        <div class="button">
+                            <a class="gallary__shoes-button" href="#">Buy now</a>
+                        </div>
+                    </li>
+                    <li class="gallary__shoes-item">
+                        <img class="gallary__img" src="assets/puma-sneakers.png" alt="puma-sneakers">
+                        <h3>Puma Sneakers</h3>
+                        <p><b>Size: </b>Dubble-XL</p>
+                        <p><b>Price: </b>180$</p>
                         <div class="button">
                             <a class="gallary__shoes-button" href="#">Buy now</a>
                         </div>
@@ -191,13 +209,7 @@
                 <div class="testimonials__content">
                     <img class="testimonials__img" src="assets/testimonials-img.png" alt="testimonials-img">
                     <blockquote class="testimonoals__list">
-                        <div class="testimonials__user">                     
-                                <img class="testimonials__user-img" src="assets/testimonials-avatar.png" alt="user-photo">
-                            <div class="testimonials__buttons">
-                                <button class="testimonials__button arrow-left" type="button" alt="left"></button>
-                                <button class="testimonials__button arrow-right" type="button" alt="right"></button>
-                            </div>
-                        </div>
+                        <img class="testimonials__user-img" src="assets/testimonials-avatar.png" alt="user-photo">
                         <h3 class="testimonials__review">Their services was best and friendly</h3>
                         <p class="testimonials__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus tempor id faucibus quam lobortis.</p>
                         <cite class="testimonials__name">Abram Korsgaard</cite>
