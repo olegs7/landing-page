@@ -305,6 +305,7 @@ header {
             li:hover {
                 text-decoration: underline;
             }
+
             .active {
                 font-weight: 500;
                 color: $orange;
@@ -312,12 +313,12 @@ header {
             }
         }
 
+        #tab-male {
+            justify-content: space-between;
+        }
+
         .gallary__shoes-list {
             display: flex;
-
-            &--male {
-                justify-content: space-between;
-            }
 
             .gallary__shoes-item {
                 padding: 10px;
