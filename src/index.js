@@ -35,12 +35,11 @@ categoriesItem.each(function() {
     $(this).click(function() {
 
         categoriesItem.removeClass('active');
+        $(this).addClass('active');
 
         for(let element of gallaryList) {
           $(element).addClass('hidden');
         }
-
-        $(this).addClass('active');
         const content = $('#' + $(this).attr('data-tab'));
         content.removeClass('hidden');
     })
