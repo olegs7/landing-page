@@ -28,26 +28,44 @@ arrowLeft.click(() => {
 // });
 
 
-const categoriesItem = document.querySelectorAll('.gallary__categories-item');
+const categoriesItem = $('.gallary__categories-item');
 const gallaryList = $('.gallary__shoes-list');
 
-   categoriesItem.forEach(item => {
-	item.addEventListener('click',() => {
-		let currentItem = item;
+categoriesItem.each(function() {
+    $(this).click(function() {
 
-		categoriesItem.forEach(item => {
-			item.classList.remove('active');
-		})
+        categoriesItem.removeClass('active');
 
-		for(let element of gallaryList){
-			element.classList.add('hidden')
-		}
+        for(let element of gallaryList) {
+          $(element).addClass('hidden');
+        }
 
-		currentItem.classList.add('active');
-		const content = document.querySelector('#' + item.dataset.tab);
-		content.classList.remove('hidden');
-	})
+        $(this).addClass('active');
+        const content = $('#' + $(this).attr('data-tab'));
+        content.removeClass('hidden');
+    })
 })
+
+
+// categoriesItem.forEach(function(item) {
+// 	item.addEventListener('click',function() {
+// 		let currentItem = item;
+
+// 		categoriesItem.forEach(function(item)  {
+// 			item.classList.remove('active');
+// 		})
+
+// 		for(let element of gallaryList){
+// 			element.classList.add('hidden')
+// 		}
+
+// 		currentItem.classList.add('active');
+// 		const content = document.querySelector('#' + item.dataset.tab);
+// 		content.classList.remove('hidden');
+// 	})
+// })
+
+
 
 })
 
