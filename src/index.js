@@ -10,11 +10,11 @@ $(document).ready(function() {
     const arrowRight = $('.gallary__button-right');
 
     arrowLeft.click(() => {
-        sliderList.prepend(sliderList.children().last(), sliderList.children().first());
+        sliderList.prepend(sliderList.find('li:last'),sliderList.find('li:first'));
     });
 
     arrowRight.click(() => {
-        sliderList.append(sliderList.children().first());
+        sliderList.append(sliderList.find('li:first'));
     });
 
     //gallary-categories-tabs
