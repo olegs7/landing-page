@@ -17,6 +17,7 @@
                 <a class="logo-link">
                     <img class="logo-img" src="assets/logo.svg" alt="logo">
                 </a>
+
                 <nav class="menu">
                     <ul class="menu-list">
                         <li class="menu-item">
@@ -31,19 +32,58 @@
                         <li class="menu-item">
                             <a class="menu-link" href="#">Gallary</a>
                         </li>
-                        <li class="menu-item">
+                        <li class="menu-item login">
                             <a class="menu-link" href="#">Login</a>
                         </li>
                     </ul>
+                    <div class="pop_up">
+                        <div class="pop_up_container">
+                            <div class="pop_up_body">
+                                <p>Login</p>
+                                <form action="index.php" method="POST">
+                                    <input type="text" placeholder="E-mail">
+                                    <input type="password" placeholder="Password">
+                                    <button type="submit" >Sign in</button>
+                                </form>
+                                <div class="pop_up_close">&#10006</div>
+                            </div>
+                        </div>
+                    </div>
                 </nav>
-            </div>     
-                <a class="menu-link button" href="#">Buy now</a> 
+            </div>
+
+            <form class="search" action="">
+                <input type="text" placeholder="Search">
+            </form>
+
+            <ul class="menu-mobile">
+                <li class="menu-item">
+                    <a class="menu-link" href="#">Menu</a>
+                </li>
+                <li class="menu-item">
+                    <a class="menu-link" href="#">About</a>
+                </li>
+                <li class="menu-item">
+                    <a class="menu-link" href="#">Feature</a>
+                </li>
+                <li class="menu-item">
+                    <a class="menu-link" href="#">Gallary</a>
+                </li>
+                <li class="menu-item login">
+                    <a class="menu-link" href="#">Login</a>
+                </li>
+            </ul>
+
+            <button class="menu-btn">
+                <span></span>
+            </button>
+
         </div>
     </div>
 </header>
 
 <main>
-    <section class="shoes">
+     <section class="shoes">
         <div class="container">
             <div class="shoes__inner">
                 <div class="shoes__content">
@@ -65,7 +105,7 @@
                 </div>
                 <div>
                     <dt class="shoes__term">Size</dt>
-                    <dd class="shoes__def">large</dd>
+                    <dd class="shoes__def">L</dd>
                 </div>
                 <div>
                     <dt class="shoes__term">Price</dt>
@@ -75,7 +115,7 @@
             </dl>
         </div>
     </section>
-    <section class="video">
+   <!-- <section class="video">
         <div class="container">
             <div class="video__inner">
                 <div class="video__content">
@@ -83,7 +123,7 @@
                     <h2 class="video__title title">Desire the feel of satisfaction.</h2>
                     <p class="video__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas leo ultrices commauris risus.</p>
                 </div>
-                <a class="video__preview" href="#">
+                <a class="video__preview">           
                     <img src="assets/video-play.svg" alt="play">
                 </a>
             </div>
@@ -141,47 +181,31 @@
                         <button class="gallary__button-right arrow-right" type="button" alt="right"></button>
                     </div>
                 </div>
-                <ul class="gallary__shoes-list active" id="tab-male">
+                <ul class="gallary__shoes-list active default" id="tab-male">
                     <li class="gallary__shoes-item">
                         <img class="gallary__img" src="assets/puma-bold.png" alt="puma-bold">
                         <h3>Puma RS-X Bold</h3>
-                        <p><b>Size: </b>Dubble-XL</p>
-                        <p><b>Price: </b>200$</p>
-                        <div class="button">
-                            <a class="gallary__shoes-button" href="#">Buy now</a>
-                        </div>
+                        <p>200$</p>
                     </li>
                     <li class="gallary__shoes-item">
                         <img class="gallary__img" src="assets/puma-sneakers.png" alt="puma-sneakers">
                         <h3>Puma Sneakers</h3>
-                        <p><b>Size: </b>Dubble-XL</p>
-                        <p><b>Price: </b>180$</p>
-                        <div class="button">
-                            <a class="gallary__shoes-button" href="#">Buy now</a>
-                        </div>
+                        <p>180$</p>
                     </li>
                     <li class="gallary__shoes-item">
                         <img class="gallary__img" src="assets/puma-ferrari.png" alt="puma-ferrari">
                         <h3>Puma Ferrari</h3>
-                        <p><b>Size: </b>Dubble-XL</p>
-                        <p><b>Price: </b>190$</p>
-                        <div class="button">
-                            <a class="gallary__shoes-button" href="#">Buy now</a>
-                        </div>
+                        <p>190$</p>
                     </li>
                     <li class="gallary__shoes-item">
                         <img class="gallary__img" src="assets/puma-running.png" alt="puma-running">
                         <h3>Puma Running</h3>
-                        <p><b>Size: </b>Dubble-XL</p>
-                        <p><b>Price: </b>200$</p>
-                        <div class="button">
-                            <a class="gallary__shoes-button" href="#">Buy now</a>
-                        </div>
+                        <p>200$</p>
                     </li>
                 </ul>
                 <ul class="gallary__shoes-list hidden" id="tab-female">
                     <li class="gallary__shoes-item">
-                        <img class="gallary__img" src="assets/puma-bold.png" alt="puma-bold">
+                        <img class="gallary__img" src="assets/puma-bold.png" alt="puma-faas">
                         <h3>Puma RS-X Bold</h3>
                         <p><b>Size: </b>Dubble-XL</p>
                         <p><b>Price: </b>200$</p>
@@ -300,16 +324,16 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 </main>
 
-<footer>
+<!-- <footer>
     <div class="container">
         <div class="footer__info">
             <p class="footer__text">Copyright 2021 The PUMA All Rights Reserved.</p>
         </div>
     </div>
-</footer>
+</footer> -->
 
 	<script src="dist/main.js" type="module"></script>
 </body>
