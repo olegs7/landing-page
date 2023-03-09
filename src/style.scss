@@ -815,6 +815,10 @@ header {
         font-size: 30px;
     }
 
+    .shoes {
+      margin-bottom: 100px;
+    }
+
     .shoes .shoes__content h1 {
         font-size: 40px;
     }
@@ -825,6 +829,10 @@ header {
 
     .shoes .shoes__inner p {
         font-size: 14px;
+    }
+
+    .video {
+      margin-bottom: 70px;
     }
 
     .video .video__inner {
@@ -840,8 +848,20 @@ header {
         width: 100%;
     }
 
+    .feature {
+      margin-bottom: 50px;
+    }
+
+    .gallary {
+      margin-bottom: 70px;
+    }
+
     .gallary .gallary__shoes-list .gallary__shoes-item:nth-child(3) {
         display: none;
+    }
+
+    .testimonials__content {
+      margin-bottom: 70px;
     }
 
     .contacts__connection {

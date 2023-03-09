@@ -44,8 +44,6 @@ $(document).ready(function() {
     $(window).width() > 880 ? buttonArrow.css("display","none") : buttonArrow.css("display","block");
 }
 
-
-
     //POP-UP
     const openLogin = $('.login');
     const closePopUp = $('.pop_up_close');
