@@ -5,6 +5,7 @@ import img from './images.js';
 $(document).ready(function() {
 	const btns = $('.gallary__buttons');
     disabledButton($('.default'), btns)
+
 	//GALLARY CAROUSEL
     const sliderList = $('.gallary__shoes-list:first');
     const sliderItem = $('.gallary__shoes-item');
@@ -37,9 +38,13 @@ $(document).ready(function() {
             content.removeClass('hidden');
         })
     })
+
     function disabledButton(param, buttonArrow) {
-    $(param).children().length <= 4 ? buttonArrow.css("display" , "none"): buttonArrow.css("display" , "block");
+    $(param).children().length <= 4 ? buttonArrow.css("display","none") : buttonArrow.css("display","block");  
+    $(window).width() > 880 ? buttonArrow.css("display","none") : buttonArrow.css("display","block");
 }
+
+
 
     //POP-UP
     const openLogin = $('.login');

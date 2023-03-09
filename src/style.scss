@@ -344,7 +344,7 @@ header {
         .feature__item {
             text-align: center;
             background: #FFFFFF;
-            margin: 0 10px;
+            margin: 0 5px;
             box-shadow: 0px 1px 30px rgba(26, 10, 3, 0.05);
             border-radius: 10px;
             transition: 1s;
@@ -394,7 +394,6 @@ header {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        height: 50px;
         margin-bottom: 60px;
 
         &-title,
@@ -422,6 +421,7 @@ header {
     .gallary__shoes-list {
         display: flex;
         justify-content: center;
+        margin-bottom: 20px;
 
         .gallary__shoes-item {
             text-align: center;
@@ -453,6 +453,10 @@ header {
         }
     }
 
+    .gallary__buttons {
+      text-align: center;
+    }
+
     .hidden {
         display: none;
     }
@@ -472,7 +476,6 @@ header {
         box-shadow: 0px 1px 30px rgba(26, 10, 3, 0.05);
         border-radius: 10px;
         padding: 30px;
-        margin-left: 125px;
 
         .testimonials__review {
             margin-top: 70px;
@@ -511,7 +514,6 @@ header {
         }
 
         .newsletter__form {
-            position: absolute;
             display: flex;
 
             &-input {
@@ -520,11 +522,10 @@ header {
                 font-weight: 400;
                 font-size: 14px;
                 line-height: 1.5;
-                width: 522px;
                 height: 51px;
                 padding: 15px 140px 15px 30px;
                 border: 1px solid rgba(0, 0, 0, 0.2);
-                border-radius: 10px;
+                border-radius: 10px 0 0 10px;
                 cursor: pointer;
             }
 
@@ -534,13 +535,12 @@ header {
 
             &-button {
                 position: relative;
-                width: 117px;
+                width: 110px;
                 height: 51px;
                 background: $orange;
                 color: #FFFFFF;
                 border-radius: 0 10px 10px 0;
                 border: 1px solid rgba(0, 0, 0, 0.2);
-                right: 117px;
                 transition: 0.5s;
 
                 &:hover {
@@ -617,7 +617,7 @@ header {
     display: none;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1060px) {
     body .title {
         font-size: 42px;
     }
@@ -628,6 +628,38 @@ header {
 
     .shoes .shoes__list .shoes__def {
         font-size: 17px;
+    }
+
+    .testimonials__content {
+      display: block;
+      text-align: center;
+    }
+
+    .testimonials__content .testimonoals__list .testimonials__text {
+      max-width: 100%;
+    }
+
+    .newsletter__inner {
+      display: block;
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .newsletter__inner .newsletter__info {
+      margin: 20px;
+      padding-bottom: 20px;
+    }
+
+    .newsletter__inner .newsletter__info .newsletter__text {
+      max-width: 100%;
+    }
+
+    .newsletter__inner .newsletter__info .newsletter__form {
+      justify-content: center;
+    }
+
+    .contacts__inner .contacts__info .contacts__list-support {
+      margin: 0 30px;
     }
 }
 
@@ -730,6 +762,31 @@ header {
     .feature .feature__list .feature__item {
         margin-bottom: 10px;
     }
+
+    .feature .feature__list .feature__item p {
+        max-width: 100%;
+    }
+
+    .gallary .gallary__shoes-list .gallary__shoes-item:nth-child(4) {
+        display: none;
+    }
+
+    .contacts__inner {
+      flex-wrap: wrap-reverse;
+    }
+
+    .contacts__inner .contacts__info {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    .contacts__connection {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      justify-content: space-between;
+    }
+
 }
 
 @media (max-width: 810px) {
@@ -782,6 +839,37 @@ header {
     .video .video__inner .video__preview {
         width: 100%;
     }
+
+    .gallary .gallary__shoes-list .gallary__shoes-item:nth-child(3) {
+        display: none;
+    }
+
+    .contacts__connection {
+      display: block;
+      text-align: center;
+    }
+
+    .contacts__inner address {
+      max-width: 100%;
+    }
+
+    .contacts__inner .contacts__social-list {
+      justify-content: center;
+    }
+}
+
+@media (max-width: 630px) {
+    .gallary .gallary__categories {
+      display: block;
+    }
+
+    .gallary .gallary__categories-title {
+      margin-bottom: 20px;
+    }
+
+    .newsletter__inner .newsletter__info {
+      margin: 20px;
+    }
 }
 
 @media (max-width: 580px) {
@@ -809,6 +897,35 @@ header {
     .shoes .shoes__list {
         gap: 0 20px;
     }
+
+    .newsletter__inner .newsletter__info .newsletter__form-input {
+      padding: 15px 30px;
+    }
+
+    .contacts__inner .contacts__info {
+      display: block;
+      text-align: center;
+      margin: 0 0 15px;
+    }
+
+    .contacts__inner .contacts__info p {
+      max-width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    .gallary .gallary__shoes-list .gallary__shoes-item:nth-child(2) {
+        display: none;
+    }
+
+    .gallary .gallary__categories-title {
+      display: block;
+    }
+
+    .gallary .gallary__categories-list {
+      justify-content: center;
+      padding-top: 10px;
+    }
 }
 
 @media (max-width: 390px) {
@@ -828,5 +945,4 @@ header {
         width: 70px;
         height: 70px;
     }
-
 }
