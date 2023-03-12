@@ -52,10 +52,12 @@ $(document).ready(function() {
     openLogin.click((e)=>{
         e.preventDefault();
         popUp.addClass('active')
+        $('.menu-btn.active').css('z-index','0')
     })
 
     closePopUp.click(()=>{
         popUp.removeClass('active')
+        $('.menu-btn.active').css('z-index','10')
     })
 
     //burger-menu

@@ -100,29 +100,18 @@ body {
 }
 
 header {
-    padding-top: 25px;
+    padding: 10px 0;
 
-    .header-inner {
+    .nav {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-bottom: 20px;
-    }
-
-    .logo {
-        display: flex;
     }
 
     .menu {
         display: flex;
         align-items: center;
-
-        ul {
-            display: flex;
-            gap: 0 40px;
-            margin-left: 100px;
-
-        }
+        gap: 40px;
 
         li {
             transition: 0.5s;
@@ -134,14 +123,15 @@ header {
             transition: 0.5s;
             transform: scale(1.1);
         }
+    }
 
-        .pop_up {
+    .pop_up {
             width: 100%;
             height: 100%;
             position: fixed;
             left: 0;
             top: 0;
-            background-color: transparent;
+            // background-color: transparent;
             z-index: 2;
             transform: translateY(-33%) scale(0);
             transition: .3s ease-in-out;
@@ -217,7 +207,6 @@ header {
             font-size: 21px;
             cursor: pointer;
         }
-    }
 
     .search input {
         font-size: 16px;
@@ -246,7 +235,7 @@ header {
             font-size: 61px;
             line-height: 1.2;
             max-width: 365px;
-            margin-bottom: 20px;
+            padding-bottom: 20px;
         }
 
         h1 span {
@@ -296,11 +285,11 @@ header {
         justify-content: space-between;
 
         .video__content {
-            margin-right: 20px;
+            padding-right: 20px;
         }
 
         .video__title {
-            margin: 10px 0 20px;
+            padding: 10px 0 20px;
             max-width: 340px;
         }
 
@@ -333,7 +322,7 @@ header {
         margin-bottom: 60px;
 
         .feature__title {
-            margin-top: 10px;
+            padding-top: 10px;
         }
     }
 
@@ -342,6 +331,7 @@ header {
         justify-content: space-between;
 
         .feature__item {
+            width: 350px;
             text-align: center;
             background: #FFFFFF;
             margin: 0 5px;
@@ -355,7 +345,7 @@ header {
             }
 
             img {
-                margin-top: 55px;
+                padding-top: 55px;
             }
 
             h3 {
@@ -363,13 +353,12 @@ header {
                 font-weight: 600;
                 font-size: 22px;
                 line-height: 1.5;
-                margin-top: 38px;
+                padding-top: 38px;
             }
 
             p {
                 font-size: 14px;
-                max-width: 240px;
-                margin: 10px 60px 20px;
+                padding: 20px;
                 opacity: 0.7;
             }
 
@@ -377,7 +366,7 @@ header {
                 display: block;
                 font-weight: 500;
                 color: $orange;
-                margin-bottom: 55px;
+               padding-bottom: 55px;
             }
         }
     }
@@ -387,14 +376,14 @@ header {
     margin-bottom: 140px;
 
     .gallary__title {
-        margin: 15px 0;
+        padding: 15px 0;
     }
 
     .gallary__categories {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-bottom: 60px;
+        padding-bottom: 60px;
 
         &-title,
         &-list {
@@ -421,11 +410,10 @@ header {
     .gallary__shoes-list {
         display: flex;
         justify-content: center;
-        margin-bottom: 20px;
 
         .gallary__shoes-item {
             text-align: center;
-            padding: 10px;
+            margin: 10px;
             border-radius: 10px;
             box-shadow: 0px 1px 30px rgba(26, 10, 3, 0.05);
             transition: 0.5s;
@@ -447,8 +435,8 @@ header {
             }
 
             p {
-                font-weight: 600;
-                margin: 10px 0;
+                font-weight: bold;
+                padding: 10px 0;
             }
         }
     }
@@ -464,7 +452,7 @@ header {
 
 .testimonials__title {
     text-align: center;
-    margin-bottom: 60px;
+    padding-bottom: 60px;
 }
 
 .testimonials__content {
@@ -478,7 +466,7 @@ header {
         padding: 30px;
 
         .testimonials__review {
-            margin-top: 70px;
+            padding-top: 70px;
         }
 
         .testimonials__text {
@@ -486,13 +474,13 @@ header {
             font-size: 14px;
             font-weight: 500;
             font-style: italic;
-            margin: 15px 0 25px;
+            padding: 15px 0 25px;
             opacity: 0.7;
         }
 
-        .testimonials__item-sport {
-            margin-top: 10px;
-            opacity: 0.8;
+        .testimonials__name {
+            display: block;
+            padding-bottom: 10px;
         }
     }
 }
@@ -509,7 +497,7 @@ header {
         .newsletter__text {
             max-width: 525px;
             font-size: 18px;
-            margin: 20px 0 40px;
+            padding: 20px 0 40px;
             opacity: 0.7;
         }
 
@@ -558,7 +546,7 @@ header {
     margin-bottom: 40px;
 
     address {
-        margin: 20px 0 20px 0;
+        padding: 20px 0 20px 0;
         max-width: 207px;
         font-style: normal;
         opacity: 0.7;
@@ -580,13 +568,17 @@ header {
         margin-right: 30px;
 
         li {
-            margin: 10px 0;
             font-size: 18px;
+            padding-bottom: 10px;
             opacity: 0.7;
         }
 
+        li:last-child {
+          padding: 0;
+        }
+
         h3 {
-            margin: 10px 0 30px;
+            padding: 10px 0 30px;
         }
 
         .contacts__list-support {
@@ -718,7 +710,7 @@ header {
         transform: rotate(45deg) translate(0, 50%);
     }
 
-    .menu .menu-list,
+    .header .menu,
     .search input {
         display: none;
     }
@@ -730,10 +722,9 @@ header {
         top: 0;
         left: 0;
         right: 0;
-        bottom: 0;
         background-color: black;
         height: 100vh;
-        z-index: 5;
+        z-index: 1;
         color: white;
         text-align: center;
         padding-top: 90px;

@@ -10,45 +10,41 @@
 </head>
 <body>
 
-<header>
+<header class="header">
     <div class="container">
-        <div class="header-inner">
-            <div class="logo">
-                <a class="logo-link">
-                    <img class="logo-img" src="assets/logo.svg" alt="logo">
-                </a>
-                <nav class="menu">
-                    <ul class="menu-list">
-                        <li class="menu-item">
-                            <a class="menu-link" href="#">Menu</a>
-                        </li>
-                        <li class="menu-item">
-                            <a class="menu-link" href="#">About</a>
-                        </li>
-                        <li class="menu-item">
-                            <a class="menu-link" href="#">Feature</a>
-                        </li>
-                        <li class="menu-item">
-                            <a class="menu-link" href="#">Gallary</a>
-                        </li>
-                        <li class="menu-item login">
-                            <a class="menu-link" href="#">Login</a>
-                        </li>
-                    </ul>
-                    <div class="pop_up">
-                        <div class="pop_up_container">
-                            <div class="pop_up_body">
-                                <p>Login</p>
-                                <form action="index.php" method="POST">
-                                    <input type="text" placeholder="E-mail">
-                                    <input type="password" placeholder="Password">
-                                    <button type="submit">Sign in</button>
-                                </form>
-                                <div class="pop_up_close">&#10006</div>
-                            </div>
-                        </div>
+        <nav class="nav">
+            <a class="logo">
+                <img class="logo-img" src="assets/logo.svg" alt="logo">
+            </a>
+            <ul class="menu">
+                <li class="menu-item">
+                    <a class="menu-link" href="#">Menu</a>
+                </li>
+                <li class="menu-item">
+                    <a class="menu-link" href="#">About</a>
+                </li>
+                <li class="menu-item">
+                    <a class="menu-link" href="#">Feature</a>
+                </li>
+                <li class="menu-item">
+                    <a class="menu-link" href="#">Gallary</a>
+                </li>
+                <li class="menu-item login">
+                    <a class="menu-link" href="#">Login</a>
+                </li>
+            </ul>
+            <div class="pop_up">
+                <div class="pop_up_container">
+                    <div class="pop_up_body">
+                        <p>Login</p>
+                        <form action="index.php" method="POST">
+                            <input type="text" placeholder="E-mail">
+                            <input type="password" placeholder="Password">
+                            <button type="submit">Sign in</button>
+                        </form>
+                        <div class="pop_up_close">&#10006</div>
                     </div>
-                </nav>
+                </div>
             </div>
             <form class="search" action="">
                 <input type="text" placeholder="Search">
@@ -73,244 +69,244 @@
             <button class="menu-btn">
                 <span></span>
             </button>
-        </div>
+        </nav>
     </div>
 </header>
 <main>
-<section class="shoes">
-    <div class="container">
-        <div class="shoes__inner">
-            <div class="shoes__content">
-                <h1 class="shoes__title">
-                    Life is better in running <span>shoes</span>
-                </h1>
-                <p class="shoes__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas leo ultrices </p>
+    <section class="shoes">
+        <div class="container">
+            <div class="shoes__inner">
+                <div class="shoes__content">
+                    <h1 class="shoes__title">
+                        Life is better in running <span>shoes</span>
+                    </h1>
+                    <p class="shoes__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas leo ultrices </p>
+                </div>
+                <img class="shoes__img" src="assets/shoes-title.png" alt="shoes">
             </div>
-            <img class="shoes__img" src="assets/shoes-title.png" alt="shoes">
+            <dl class="shoes__list">
+                <div>
+                    <dt class="shoes__term">Brand</dt>
+                    <dd class="shoes__def">Puma</dd>
+                </div>
+                <div>
+                    <dt class="shoes__term">Person</dt>
+                    <dd class="shoes__def">man</dd>
+                </div>
+                <div>
+                    <dt class="shoes__term">Size</dt>
+                    <dd class="shoes__def">L</dd>
+                </div>
+                <div>
+                    <dt class="shoes__term">Price</dt>
+                    <dd class="shoes__def">$150</dd>
+                </div>
+                <a class="button" href="#">Buy now</a>
+            </dl>
         </div>
-        <dl class="shoes__list">
-            <div>
-                <dt class="shoes__term">Brand</dt>
-                <dd class="shoes__def">Puma</dd>
-            </div>
-            <div>
-                <dt class="shoes__term">Person</dt>
-                <dd class="shoes__def">man</dd>
-            </div>
-            <div>
-                <dt class="shoes__term">Size</dt>
-                <dd class="shoes__def">L</dd>
-            </div>
-            <div>
-                <dt class="shoes__term">Price</dt>
-                <dd class="shoes__def">$150</dd>
-            </div>
-            <a class="button" href="#">Buy now</a>
-        </dl>
-    </div>
-</section>
-<section class="video">
-    <div class="container">
-        <div class="video__inner">
-            <div class="video__content">
-                <p class="video__pretitle pretitle">VIDEO</p>
-                <h2 class="video__title title">Desire the feel of satisfaction.</h2>
-                <p class="video__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas leo ultrices commauris risus.</p>
-            </div>
-            <a class="video__preview">
-                <img src="assets/video-play.svg" alt="play">
-            </a>
-        </div>
-    </div>
-</section>
-<section class="feature">
-    <div class="container">
-        <div class="feature__inner">
-            <div class="feature__content">
-                <p class="feature__pretitle pretitle">FEATURE</p>
-                <h2 class="feature__title title">We have best feature in Shoes</h2>
-            </div>
-            <div class="feature__list">
-                <div class="feature__item">
-                    <img class="feature__item-img" src="assets/quality.svg" alt="quality">
-                    <h3 class="feature__item-title">Quality</h3>
-                    <p class="feature__item-text">Lorem ipsum dolor sit consectetur adipiscing elit. Viverra in ul</p>
-                    <a class="feature__item-read" href="#">Read more</a>
+    </section>
+    <section class="video">
+        <div class="container">
+            <div class="video__inner">
+                <div class="video__content">
+                    <p class="video__pretitle pretitle">VIDEO</p>
+                    <h2 class="video__title title">Desire the feel of satisfaction.</h2>
+                    <p class="video__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas leo ultrices commauris risus.</p>
                 </div>
-                <div class="feature__item">
-                    <img class="feature__item-img" src="assets/flexible.svg" alt="flexible">
-                    <h3 class="feature__item-title">Flexible</h3>
-                    <p class="feature__item-text">Lorem ipsum dolor sit consectetur adipiscing elit. Viverra in ul</p>
-                    <a class="feature__item-read" href="#">Read more</a>
-                </div>
-                <div class="feature__item">
-                    <img class="feature__item-img" src="assets/long-lasting.svg" alt="long-lasting">
-                    <h3 class="feature__item-title">Long Lasting</h3>
-                    <p class="feature__item-text">Lorem ipsum dolor sit consectetur adipiscing elit. Viverra in ul</p>
-                    <a class="feature__item-read" href="#">Read more</a>
-                </div>
+                <a class="video__preview">
+                    <img src="assets/video-play.svg" alt="play">
+                </a>
             </div>
         </div>
-    </div>
-</section>
-		<section class="gallary">
-				<div class="container">
-						<div class="gallary__inner">
-								<div class="gallary__content">
-										<p class="gallary__pretitle pretitle">GALLARY</p>
-										<h2 class="gallary__title title">40+ YEARS’ EXPERIENCE</h2>
-								</div>
-								<div class="gallary__categories">
-										<div class="gallary__categories-title">
-												Categories:
-												<ul class="gallary__categories-list">
-														<li class="gallary__categories-item" data-tab="tab-all">All</li>
-														<li class="gallary__categories-item active" data-tab="tab-male">Male</li>
-														<li class="gallary__categories-item" data-tab="tab-female">Female</li>
-														<li class="gallary__categories-item" data-tab="tab-kids">Kids</li>
-												</ul>
-										</div>		
-								</div>
-								<ul class="gallary__shoes-list active default" id="tab-male">
-										<li class="gallary__shoes-item">
-												<img class="gallary__img" src="assets/puma-bold.png" alt="puma-bold">
-												<h3>Puma RS-X Bold</h3>
-												<p>200$</p>
-										</li>
-										<li class="gallary__shoes-item">
-												<img class="gallary__img" src="assets/puma-sneakers.png" alt="puma-sneakers">
-												<h3>Puma Sneakers</h3>
-												<p>180$</p>
-										</li>
-										<li class="gallary__shoes-item">
-												<img class="gallary__img" src="assets/puma-ferrari.png" alt="puma-ferrari">
-												<h3>Puma Ferrari</h3>
-												<p>190$</p>
-										</li>
-										<li class="gallary__shoes-item">
-												<img class="gallary__img" src="assets/puma-running.png" alt="puma-running">
-												<h3>Puma Running</h3>
-												<p>200$</p>
-										</li>
-								</ul>
-								<ul class="gallary__shoes-list hidden" id="tab-female">
-										<li class="gallary__shoes-item">
-												<img class="gallary__img" src="assets/puma-bold.png" alt="puma-faas">
-												<h3>Puma RS-X Bold</h3>
-												<p>200$</p>
-										</li>
-										<li class="gallary__shoes-item">
-												<img class="gallary__img" src="assets/puma-sneakers.png" alt="puma-sneakers">
-												<h3>Puma Sneakers</h3>
-												<p>180$</p>
-										</li>
-								</ul>
-								<div class="gallary__buttons">
-										<button class="gallary__button-left arrow-left" type="button" alt="left"></button>
-										<button class="gallary__button-right arrow-right" type="button" alt="right"></button>
-								</div>
-						</div>
-				</div>
-		</section>
-		<section class="testimonials">
-				<div class="container">
-						<div class="testimonials__inner">
-								<div class="testimonials__title title">Testimonials</div>
-								<div class="testimonials__content">
-										<img class="testimonials__img" src="assets/testimonials-img.png" alt="testimonials-img">
-										<blockquote class="testimonoals__list">
-												<img class="testimonials__user-img" src="assets/testimonials-avatar.png" alt="user-photo">
-												<h3 class="testimonials__review">Their services was best and friendly</h3>
-												<p class="testimonials__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus tempor id faucibus quam lobortis.</p>
-												<cite class="testimonials__name">Abram Korsgaard</cite>
-												<p class="testimonials__item-sport">Athletic</p>
-										</blockquote>
-								</div>
-						</div>
-				</div>
-		</section>
-		<section class="newsletter">
-				<div class="container">
-						<div class="newsletter__inner">
-								<img class="newsletter__img" src="assets/newsletter-img.png" alt="newsletter-img">
-								<div class="newsletter__info">
-										<h2 class="newsletter__title">Sign up to our Newsletter</h2>
-										<p class="newsletter__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu sagittis, Atiam lorem sed justo amet viverra in a.</p>
-										<form class="newsletter__form" action="#">
-												<input class="newsletter__form-input" type="email" placeholder="Enter your email address">
-												<button class="newsletter__form-button" type="submit">Send</button>
-										</form>
-								</div>
-						</div>
-				</div>
-		</section>
-		<section class="contacts">
-				<div class="container">
-						<div class="contacts__inner">
-								<div class="contacts__connection">
-										<img class="contacts__img" src="assets/logo.svg" alt="logo">
-										<address>10 New Town Street, V2 5NW, Newstate, USA.</address>
-										<a class="contacts__email" href="mailto:name@gmail.com">name@gmail.com</a>
-										<ul class="contacts__social-list">
-												<li class="contacts__social-item">
-														<a href="#" class="contacts__social-link">
-																<img class="contacts__social-icon" src="assets/facebook.svg" alt="facebook">
-														</a>
-												</li>
-												<li class="contacts__social-item">
-														<a href="#" class="contacts__social-link">
-																<img class="contacts__social-icon" src="assets/instagram.svg" alt="instagram">
-														</a>
-												</li>
-												<li class="contacts__social-item">
-														<a href="#" class="contacts__social-link">
-																<img class="contacts__social-icon" src="assets/twitter.svg" alt="twitter">
-														</a>
-												</li>
-												<li class="contacts__social-item">
-														<a href="#" class="contacts__social-link">
-																<img class="contacts__social-icon" src="assets/google.svg" alt="google">
-														</a>
-												</li>
-										</ul>
-								</div>
-								<div class="contacts__info">
-										<div class="contacts__list-services">
-												<h3 class="contacts__title">Our services</h3>
-												<ul class="contacts__list">
-														<li class="contacts__item">
-																<a class="contacts__link" href="#">About us</a>
-														</li>
-														<li class="contacts__item">
-																<a class="contacts__link" href="">Feature</a>
-														</li>
-														<li class="contacts__item">
-																<a class="contacts__link" href="#">Gallary</a>
-														</li>
-												</ul>
-										</div>
-										<div class="contacts__list-support">
-												<h3 class="contacts__title">Support</h3>
-												<ul class="contacts__list">
-														<li class="contacts__item">
-																<a class="contacts__link" href="#">Privacy & Policy</a>
-														</li>
-														<li class="contacts__item">
-																<a class="contacts__link" href="">Terms & Condition</a>
-														</li>
-														<li class="contacts__item">
-																<a class="contacts__link" href="#">Support System</a>
-														</li>
-												</ul>
-										</div>
-										<div class="contacts__list-contact">
-												<h3 class="contacts__title">Contact us</h3>
-												<p class="contacts__text">Lorem ipsum dolor sit amet consectetur adipiscin.</p>
-										</div>
-								</div>
-						</div>
-				</div>
-		</section>
+    </section>
+    <section class="feature">
+        <div class="container">
+            <div class="feature__inner">
+                <div class="feature__content">
+                    <p class="feature__pretitle pretitle">FEATURE</p>
+                    <h2 class="feature__title title">We have best feature in Shoes</h2>
+                </div>
+                <div class="feature__list">
+                    <div class="feature__item">
+                        <img class="feature__item-img" src="assets/quality.svg" alt="quality">
+                        <h3 class="feature__item-title">Quality</h3>
+                        <p class="feature__item-text">Lorem ipsum dolor sit consectetur adipiscing elit. Viverra in ul</p>
+                        <a class="feature__item-read" href="#">Read more</a>
+                    </div>
+                    <div class="feature__item">
+                        <img class="feature__item-img" src="assets/flexible.svg" alt="flexible">
+                        <h3 class="feature__item-title">Flexible</h3>
+                        <p class="feature__item-text">Lorem ipsum dolor sit consectetur adipiscing elit. Viverra in ul</p>
+                        <a class="feature__item-read" href="#">Read more</a>
+                    </div>
+                    <div class="feature__item">
+                        <img class="feature__item-img" src="assets/long-lasting.svg" alt="long-lasting">
+                        <h3 class="feature__item-title">Long Lasting</h3>
+                        <p class="feature__item-text">Lorem ipsum dolor sit consectetur adipiscing elit. Viverra in ul</p>
+                        <a class="feature__item-read" href="#">Read more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="gallary">
+        <div class="container">
+            <div class="gallary__inner">
+                <div class="gallary__content">
+                    <p class="gallary__pretitle pretitle">GALLARY</p>
+                    <h2 class="gallary__title title">40+ YEARS’ EXPERIENCE</h2>
+                </div>
+                <div class="gallary__categories">
+                    <div class="gallary__categories-title">
+                        Categories:
+                        <ul class="gallary__categories-list">
+                            <li class="gallary__categories-item" data-tab="tab-all">All</li>
+                            <li class="gallary__categories-item active" data-tab="tab-male">Male</li>
+                            <li class="gallary__categories-item" data-tab="tab-female">Female</li>
+                            <li class="gallary__categories-item" data-tab="tab-kids">Kids</li>
+                        </ul>
+                    </div>
+                </div>
+                <ul class="gallary__shoes-list active default" id="tab-male">
+                    <li class="gallary__shoes-item">
+                        <img class="gallary__img" src="assets/puma-bold.png" alt="puma-bold">
+                        <h3>Puma RS-X Bold</h3>
+                        <p>200$</p>
+                    </li>
+                    <li class="gallary__shoes-item">
+                        <img class="gallary__img" src="assets/puma-sneakers.png" alt="puma-sneakers">
+                        <h3>Puma Sneakers</h3>
+                        <p>180$</p>
+                    </li>
+                    <li class="gallary__shoes-item">
+                        <img class="gallary__img" src="assets/puma-ferrari.png" alt="puma-ferrari">
+                        <h3>Puma Ferrari</h3>
+                        <p>190$</p>
+                    </li>
+                    <li class="gallary__shoes-item">
+                        <img class="gallary__img" src="assets/puma-running.png" alt="puma-running">
+                        <h3>Puma Running</h3>
+                        <p>200$</p>
+                    </li>
+                </ul>
+                <ul class="gallary__shoes-list hidden" id="tab-female">
+                    <li class="gallary__shoes-item">
+                        <img class="gallary__img" src="assets/puma-bold.png" alt="puma-faas">
+                        <h3>Puma RS-X Bold</h3>
+                        <p>200$</p>
+                    </li>
+                    <li class="gallary__shoes-item">
+                        <img class="gallary__img" src="assets/puma-sneakers.png" alt="puma-sneakers">
+                        <h3>Puma Sneakers</h3>
+                        <p>180$</p>
+                    </li>
+                </ul>
+                <div class="gallary__buttons">
+                    <button class="gallary__button-left arrow-left" type="button" alt="left"></button>
+                    <button class="gallary__button-right arrow-right" type="button" alt="right"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="testimonials">
+        <div class="container">
+            <div class="testimonials__inner">
+                <div class="testimonials__title title">Testimonials</div>
+                <div class="testimonials__content">
+                    <img class="testimonials__img" src="assets/testimonials-img.png" alt="testimonials-img">
+                    <blockquote class="testimonoals__list">
+                        <img class="testimonials__user-img" src="assets/testimonials-avatar.png" alt="user-photo">
+                        <h3 class="testimonials__review">Their services was best and friendly</h3>
+                        <p class="testimonials__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus tempor id faucibus quam lobortis.</p>
+                        <cite class="testimonials__name">Abram Korsgaard</cite>
+                        <p class="testimonials__item-sport">Athletic</p>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter__inner">
+                <img class="newsletter__img" src="assets/newsletter-img.png" alt="newsletter-img">
+                <div class="newsletter__info">
+                    <h2 class="newsletter__title">Sign up to our Newsletter</h2>
+                    <p class="newsletter__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu sagittis, Atiam lorem sed justo amet viverra in a.</p>
+                    <form class="newsletter__form" action="#">
+                        <input class="newsletter__form-input" type="email" placeholder="Enter your email address">
+                        <button class="newsletter__form-button" type="submit">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contacts">
+        <div class="container">
+            <div class="contacts__inner">
+                <div class="contacts__connection">
+                    <img class="contacts__img" src="assets/logo.svg" alt="logo">
+                    <address>10 New Town Street, V2 5NW, Newstate, USA.</address>
+                    <a class="contacts__email" href="mailto:name@gmail.com">name@gmail.com</a>
+                    <ul class="contacts__social-list">
+                        <li class="contacts__social-item">
+                            <a href="#" class="contacts__social-link">
+                                <img class="contacts__social-icon" src="assets/facebook.svg" alt="facebook">
+                            </a>
+                        </li>
+                        <li class="contacts__social-item">
+                            <a href="#" class="contacts__social-link">
+                                <img class="contacts__social-icon" src="assets/instagram.svg" alt="instagram">
+                            </a>
+                        </li>
+                        <li class="contacts__social-item">
+                            <a href="#" class="contacts__social-link">
+                                <img class="contacts__social-icon" src="assets/twitter.svg" alt="twitter">
+                            </a>
+                        </li>
+                        <li class="contacts__social-item">
+                            <a href="#" class="contacts__social-link">
+                                <img class="contacts__social-icon" src="assets/google.svg" alt="google">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="contacts__info">
+                    <div class="contacts__list-services">
+                        <h3 class="contacts__title">Our services</h3>
+                        <ul class="contacts__list">
+                            <li class="contacts__item">
+                                <a class="contacts__link" href="#">About us</a>
+                            </li>
+                            <li class="contacts__item">
+                                <a class="contacts__link" href="">Feature</a>
+                            </li>
+                            <li class="contacts__item">
+                                <a class="contacts__link" href="#">Gallary</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="contacts__list-support">
+                        <h3 class="contacts__title">Support</h3>
+                        <ul class="contacts__list">
+                            <li class="contacts__item">
+                                <a class="contacts__link" href="#">Privacy & Policy</a>
+                            </li>
+                            <li class="contacts__item">
+                                <a class="contacts__link" href="">Terms & Condition</a>
+                            </li>
+                            <li class="contacts__item">
+                                <a class="contacts__link" href="#">Support System</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="contacts__list-contact">
+                        <h3 class="contacts__title">Contact us</h3>
+                        <p class="contacts__text">Lorem ipsum dolor sit amet consectetur adipiscin.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </main>
 <footer>
 		<div class="container">
