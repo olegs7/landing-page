@@ -1,16 +1,16 @@
-import "./style.scss";
+import "./sass/style.scss";
 import $ from 'jquery';
 import img from './images.js';
 
 $(document).ready(function() {
-	const btns = $('.gallary__buttons');
+	const btns = $('.gallery__buttons');
     disabledButton($('.default'), btns)
 
-	//GALLARY CAROUSEL
-    const sliderList = $('.gallary__shoes-list:first');
-    const sliderItem = $('.gallary__shoes-item');
-    const arrowLeft = $('.gallary__button-left');
-    const arrowRight = $('.gallary__button-right');
+	//GALLERY CAROUSEL
+    const sliderList = $('.gallery__shoes-list:first');
+    const sliderItem = $('.gallery__shoes-item');
+    const arrowLeft = $('.gallery__button-left');
+    const arrowRight = $('.gallery__button-right');
 
     arrowLeft.click(()=>{
         sliderList.prepend(sliderList.find('li:last'));
@@ -21,8 +21,8 @@ $(document).ready(function() {
     });
 
     //TABS
-    const categoriesItem = $('.gallary__categories-item');
-    const gallaryList = $('.gallary__shoes-list');
+    const categoriesItem = $('.gallery__categories-item');
+    const galleryList = $('.gallery__shoes-list');
 
     categoriesItem.each(function() {
         $(this).click(function() {
@@ -30,7 +30,7 @@ $(document).ready(function() {
             categoriesItem.removeClass('active');
             $(this).addClass('active');
 
-            for (let element of gallaryList) {
+            for (let element of galleryList) {
                 $(element).addClass('hidden');
             }
             const content = $('#' + $(this).attr('data-tab'));
@@ -69,7 +69,17 @@ $(document).ready(function() {
        menuBtn.toggleClass('active')
     })
 
+    // video
+    const videoPreview = $('.video__preview')
+    const videoPlay = $('.play-img')
 
+    $(videoPlay).click(()=>{
+      videoPlay.css('display','none')
+      videoPreview.css('background-image','none').append('<iframe width="560" height="315" src="https://www.youtube.com/embed/RMqv_GlnyR4?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>')
+    })
+
+    //footer-date
+    $('.footer__text').append('@Copyright ' + new Date().getFullYear() + ' The PUMA All Rights')
 })
 
 

@@ -1,4 +1,4 @@
-@import "./sass/main.scss";
+@import "main.scss";
 
 html {
   box-sizing: border-box;
@@ -299,7 +299,7 @@ header {
         }
 
         .video__preview {
-            background-image: url(./assets/video-preview.png);
+            background-image: url(../assets/video-preview.png);
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
@@ -372,14 +372,14 @@ header {
     }
 }
 
-.gallary {
+.gallery {
     margin-bottom: 140px;
 
-    .gallary__title {
+    .gallery__title {
         padding: 15px 0;
     }
 
-    .gallary__categories {
+    .gallery__categories {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -407,11 +407,11 @@ header {
         }
     }
 
-    .gallary__shoes-list {
+    .gallery__shoes-list {
         display: flex;
         justify-content: center;
 
-        .gallary__shoes-item {
+        .gallery__shoes-item {
             text-align: center;
             margin: 10px;
             border-radius: 10px;
@@ -441,7 +441,7 @@ header {
         }
     }
 
-    .gallary__buttons {
+    .gallery__buttons {
       text-align: center;
     }
 
@@ -660,6 +660,10 @@ header {
         font-size: 40px;
     }
 
+    .shoes .shoes__content h1 {
+      font-size: 45px;
+    }
+
     .menu-btn {
         display: flex;
         width: 40px;
@@ -758,7 +762,7 @@ header {
         max-width: 100%;
     }
 
-    .gallary .gallary__shoes-list .gallary__shoes-item:nth-child(4) {
+    .gallery .gallery__shoes-list .gallery__shoes-item:nth-child(4) {
         display: none;
     }
 
@@ -787,6 +791,10 @@ header {
 
     .shoes .shoes__content h1 {
         font-size: 45px;
+    }
+
+    .shoes .shoes__inner img {
+      max-width: 500px;
     }
 
     .shoes .shoes__list {
@@ -843,11 +851,11 @@ header {
       margin-bottom: 50px;
     }
 
-    .gallary {
+    .gallery {
       margin-bottom: 70px;
     }
 
-    .gallary .gallary__shoes-list .gallary__shoes-item:nth-child(3) {
+    .gallery .gallery__shoes-list .gallery__shoes-item:nth-child(3) {
         display: none;
     }
 
@@ -870,11 +878,11 @@ header {
 }
 
 @media (max-width: 630px) {
-    .gallary .gallary__categories {
+    .gallery .gallery__categories {
       display: block;
     }
 
-    .gallary .gallary__categories-title {
+    .gallery .gallery__categories-title {
       margin-bottom: 20px;
     }
 
@@ -925,15 +933,16 @@ header {
 }
 
 @media (max-width: 500px) {
-    .gallary .gallary__shoes-list .gallary__shoes-item:nth-child(2) {
+    .gallery .gallery__shoes-list .gallery__shoes-item:nth-child(2) {
         display: none;
     }
 
-    .gallary .gallary__categories-title {
+    .gallery .gallery__categories-title {
       display: block;
+      text-align: center;
     }
 
-    .gallary .gallary__categories-list {
+    .gallery .gallery__categories-list {
       justify-content: center;
       padding-top: 10px;
     }

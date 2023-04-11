@@ -15,7 +15,6 @@ import ferrari from "./assets/puma-ferrari.png";
 import running from "./assets/puma-running.png";
 
 //female
-
 import testimonials from "./assets/testimonials-img.png";
 import testimonials_avatar from "./assets/testimonials-avatar.png";
 
