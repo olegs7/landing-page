@@ -3,26 +3,78 @@ import $ from 'jquery';
 import img from './images.js';
 
 $(document).ready(function() {
-	const btns = $('.gallery__buttons');
-    disabledButton($('.default'), btns)
+	  const btns = $('.gallery__buttons');
+      disabledButton($('.default'), btns)
 
-	//GALLERY CAROUSEL
-    const sliderList = $('.gallery__shoes-list:first');
-    const sliderItem = $('.gallery__shoes-item');
+	//GALLERY-CAROUSEL
+    const tabAll = $('#tab-all')
+    const tabMale = $('#tab-male')
+    const tabFemale = $('#tab-female')
+    const tabKids = $('#tab-kids')
     const arrowLeft = $('.gallery__button-left');
     const arrowRight = $('.gallery__button-right');
+    const widthScreen = $(window).width()
 
-    arrowLeft.click(()=>{
-        sliderList.prepend(sliderList.find('li:last'));
-    });
+    arrowLeft.click(() => {
+    if ($('.active').text() == 'All') {
+        slideRight(tabAll)
+    } else if ($('.active').text() == 'Male') {
+        slideRight(tabMale)
+    } else if ($('.active').text() == 'Female') {
+        slideRight(tabFemale)
+    } else {
+        slideRight(tabKids)
+    }
+});
 
-    arrowRight.click(()=>{
-        sliderList.append(sliderList.find('li:first'));
-    });
+    arrowRight.click(() => {
+    if ($('.active').text() == 'All') {
+        slideRight(tabAll)
+    } else if ($('.active').text() == 'Male') {
+        slideRight(tabMale)
+    } else if ($('.active').text() == 'Female') {
+        slideRight(tabFemale)
+    } else {
+        slideRight(tabKids)
+    }
+});
+
+    function slideLeft(itemTab) {
+    itemTab.prepend(itemTab.find('li:last'));
+    itemTab.find('li').slice(4).hide()
+    itemTab.find('li:nth-child(1)').show()
+    if (widthScreen <= 880 && widthScreen >= 721) {
+        itemTab.find('li').slice(3).hide()
+    } else if (widthScreen <= 720 && widthScreen >= 501) {
+        itemTab.find('li').slice(2).hide()
+    } else if (widthScreen <= 500) {
+        itemTab.find('li').slice(1).hide()
+    }
+}
+
+    function slideRight(itemTab) {
+    itemTab.append(itemTab.find('li:first'));
+    itemTab.find('li').slice(4).hide()
+    itemTab.find('li:nth-child(4)').show()
+    if (widthScreen <= 880 && widthScreen >= 721) {
+        itemTab.find('li').slice(3).hide()
+        itemTab.find('li:nth-child(3)').show()
+    } else if (widthScreen <= 720 && widthScreen >= 501) {
+        itemTab.find('li').slice(2).hide()
+        itemTab.find('li:nth-child(2)').show()
+    } else if (widthScreen <= 500) {
+        itemTab.find('li').slice(1).hide()
+        itemTab.find('li:nth-child(1)').show()
+    }
+}
 
     //TABS
     const categoriesItem = $('.gallery__categories-item');
     const galleryList = $('.gallery__shoes-list');
+
+    for (let element of galleryList) {
+          $(element).find('li').slice(4).hide()
+        }
 
     categoriesItem.each(function() {
         $(this).click(function() {
@@ -33,15 +85,14 @@ $(document).ready(function() {
             for (let element of galleryList) {
                 $(element).addClass('hidden');
             }
+
             const content = $('#' + $(this).attr('data-tab'));
-            disabledButton(content, btns)
             content.removeClass('hidden');
         })
     })
 
     function disabledButton(param, buttonArrow) {
-    $(param).children().length <= 4 ? buttonArrow.css("display","none") : buttonArrow.css("display","block");  
-    $(window).width() > 880 ? buttonArrow.css("display","none") : buttonArrow.css("display","block");
+    $(param).children().length <= 4 ? buttonArrow.css("display","none") : buttonArrow.css("display","block");
 }
 
     //POP-UP

@@ -18,14 +18,14 @@ module.exports = {
         {
             test: /\.(png|jpg|gif|svg|eot|ttf|woff)$/,
             type: 'asset/resource'
-        },   
+        },
     ]
 },
      plugins : [
         new HtmlWebpackPlugin({
             template: "./src/index.html",
             inject : "body",
-            // scriptLoading: "blocking",
+            scriptLoading: "blocking",
         })
     ]
 };

@@ -19,10 +19,14 @@ import testimonials from "./assets/testimonials-img.png";
 import testimonials_avatar from "./assets/testimonials-avatar.png";
 
 import newsletter from "./assets/newsletter-img.png";
+
 //socials
 import facebook from "./assets/facebook.svg";
 import instagram from "./assets/instagram.svg";
 import twitter from "./assets/twitter.svg";
 import google from "./assets/google.svg";
+
+
+
 
 

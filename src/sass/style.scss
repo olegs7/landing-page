@@ -75,9 +75,7 @@ body {
         height: 50px;
         border-radius: 50%;
         border: none;
-        // background: rgba(238, 85, 20, 0.1);
         cursor: pointer;
-
     }
 
     .arrow-left:after,
@@ -131,7 +129,6 @@ header {
             position: fixed;
             left: 0;
             top: 0;
-            // background-color: transparent;
             z-index: 2;
             transform: translateY(-33%) scale(0);
             transition: .3s ease-in-out;
@@ -460,7 +457,7 @@ header {
     justify-content: space-between;
     margin-bottom: 140px;
 
-    .testimonoals__list {
+    .testimonials__list {
         box-shadow: 0px 1px 30px rgba(26, 10, 3, 0.05);
         border-radius: 10px;
         padding: 30px;
@@ -627,7 +624,7 @@ header {
       text-align: center;
     }
 
-    .testimonials__content .testimonoals__list .testimonials__text {
+    .testimonials__content .testimonials__list .testimonials__text {
       max-width: 100%;
     }
 
@@ -751,10 +748,10 @@ header {
 
     .feature .feature__list {
         flex-wrap: wrap;
-        justify-content: center;
     }
 
     .feature .feature__list .feature__item {
+        flex: 1 0 300px;
         margin-bottom: 10px;
     }
 
