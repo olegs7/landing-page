@@ -16,57 +16,57 @@ $(document).ready(function() {
     const widthScreen = $(window).width()
 
     arrowLeft.click(() => {
-    if ($('.active').text() == 'All') {
-        slideRight(tabAll)
-    } else if ($('.active').text() == 'Male') {
-        slideRight(tabMale)
-    } else if ($('.active').text() == 'Female') {
-        slideRight(tabFemale)
-    } else {
-        slideRight(tabKids)
-    }
-});
+     if ($('.active').text() == 'All') {
+         slideLeft(tabAll)
+     } else if ($('.active').text() == 'Male') {
+         slideLeft(tabMale)
+     } else if ($('.active').text() == 'Female') {
+         slideLeft(tabFemale)
+     } else {
+         slideLeft(tabKids)
+     }
+ });
 
-    arrowRight.click(() => {
-    if ($('.active').text() == 'All') {
-        slideRight(tabAll)
-    } else if ($('.active').text() == 'Male') {
-        slideRight(tabMale)
-    } else if ($('.active').text() == 'Female') {
-        slideRight(tabFemale)
-    } else {
-        slideRight(tabKids)
-    }
-});
+ arrowRight.click(() => {
+     if ($('.active').text() == 'All') {
+         slideRight(tabAll)
+     } else if ($('.active').text() == 'Male') {
+         slideRight(tabMale)
+     } else if ($('.active').text() == 'Female') {
+         slideRight(tabFemale)
+     } else {
+         slideRight(tabKids)
+     }
+ });
 
     function slideLeft(itemTab) {
-    itemTab.prepend(itemTab.find('li:last'));
-    itemTab.find('li').slice(4).hide()
-    itemTab.find('li:nth-child(1)').show()
-    if (widthScreen <= 880 && widthScreen >= 721) {
+     itemTab.prepend(itemTab.find('li:last'));
+     itemTab.find('li').slice(4).hide()
+     itemTab.find('li:nth-child(1)').show()
+     if (widthScreen <= 880 && widthScreen >= 721) {
         itemTab.find('li').slice(3).hide()
-    } else if (widthScreen <= 720 && widthScreen >= 501) {
+     } else if (widthScreen <= 720 && widthScreen >= 501) {
         itemTab.find('li').slice(2).hide()
-    } else if (widthScreen <= 500) {
+     } else if (widthScreen <= 500) {
         itemTab.find('li').slice(1).hide()
-    }
-}
+     }
+ }
 
     function slideRight(itemTab) {
-    itemTab.append(itemTab.find('li:first'));
-    itemTab.find('li').slice(4).hide()
-    itemTab.find('li:nth-child(4)').show()
-    if (widthScreen <= 880 && widthScreen >= 721) {
-        itemTab.find('li').slice(3).hide()
-        itemTab.find('li:nth-child(3)').show()
-    } else if (widthScreen <= 720 && widthScreen >= 501) {
-        itemTab.find('li').slice(2).hide()
-        itemTab.find('li:nth-child(2)').show()
-    } else if (widthScreen <= 500) {
-        itemTab.find('li').slice(1).hide()
-        itemTab.find('li:nth-child(1)').show()
-    }
-}
+     itemTab.append(itemTab.find('li:first'));
+     itemTab.find('li').slice(4).hide()
+     itemTab.find('li:nth-child(4)').show()
+     if (widthScreen <= 880 && widthScreen >= 721) {
+         itemTab.find('li').slice(3).hide()
+         itemTab.find('li:nth-child(3)').show()
+     } else if (widthScreen <= 720 && widthScreen >= 501) {
+         itemTab.find('li').slice(2).hide()
+         itemTab.find('li:nth-child(2)').show()
+     } else if (widthScreen <= 500) {
+         itemTab.find('li').slice(1).hide()
+         itemTab.find('li:nth-child(1)').show()
+     }
+ }
 
     //TABS
     const categoriesItem = $('.gallery__categories-item');
@@ -77,22 +77,22 @@ $(document).ready(function() {
         }
 
     categoriesItem.each(function() {
-        $(this).click(function() {
+    $(this).click(function() {
 
-            categoriesItem.removeClass('active');
-            $(this).addClass('active');
+        categoriesItem.removeClass('active');
+        $(this).addClass('active');
 
-            for (let element of galleryList) {
-                $(element).addClass('hidden');
-            }
+        for (let element of galleryList) {
+            $(element).addClass('hidden');
+        }
 
-            const content = $('#' + $(this).attr('data-tab'));
-            content.removeClass('hidden');
-        })
+        const content = $('#' + $(this).attr('data-tab'));
+        content.removeClass('hidden');
     })
+})
 
     function disabledButton(param, buttonArrow) {
-    $(param).children().length <= 4 ? buttonArrow.css("display","none") : buttonArrow.css("display","block");
+    $(param).children().length <= 4 ? buttonArrow.css("display", "none") : buttonArrow.css("display", "block");
 }
 
     //POP-UP
