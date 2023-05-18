@@ -3,7 +3,7 @@ import $ from 'jquery';
 import img from './images.js';
 
 $(document).ready(function() {
-	  const btns = $('.gallery__buttons');
+	const btns = $('.gallery__buttons');
       disabledButton($('.default'), btns)
 
 	//GALLERY-CAROUSEL
@@ -27,7 +27,7 @@ $(document).ready(function() {
      }
  });
 
- arrowRight.click(() => {
+    arrowRight.click(() => {
      if ($('.active').text() == 'All') {
          slideRight(tabAll)
      } else if ($('.active').text() == 'Male') {
@@ -104,6 +104,10 @@ $(document).ready(function() {
         e.preventDefault();
         popUp.addClass('active')
         $('.menu-btn.active').css('z-index','0')
+    })
+    //clear form
+    $('button[type=submit]').click(()=>{
+        $('form[name=form]').trigger('reset')
     })
 
     closePopUp.click(()=>{
